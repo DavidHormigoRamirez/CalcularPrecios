@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+
+    >
+
+    <EditText
+        android:id="@+id/cuenta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="¿Cuánto es la cuenta?"
+        android:paddingBottom="16dp"
+        android:inputType="numberDecimal" />
+    <RadioGroup
+        android:id="@+id/rg_opciones_servicio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:paddingBottom="16dp"
+            android:id="@+id/rb_servicio_malo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Malo (0%)"/>
+        <RadioButton
+            android:id="@+id/rb_servicio_normal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Servicio Normal (10%)"/>
+        <RadioButton
+            android:id="@+id/rb_servicio_excelente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Servicio Excelente (20%)"/>
+    </RadioGroup>
+    <TextView
+        android:id="@+id/cuenta_incrementada"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:id="@+id/numero_personas"
+        android:hint="3"
+        android:inputType="number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/boton_calcular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calcular"/>
+    <TextView
+        android:id="@+id/total_por_persona"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
